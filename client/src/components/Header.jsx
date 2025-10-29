@@ -24,6 +24,11 @@ function Header() {
                 About
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to={URL.ORDER} className="nav-link">
+                Order
+              </Link>
+            </li>
           </ul>
         </nav>
       </div>

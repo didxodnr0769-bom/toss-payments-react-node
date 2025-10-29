@@ -13,6 +13,9 @@ export const URL = {
   // About page
   ABOUT: "/about",
 
+  // Order page
+  ORDER: "/order",
+
   // 404 Not Found page (wildcard)
   NOT_FOUND: "*",
 };

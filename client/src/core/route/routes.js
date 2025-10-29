@@ -1,6 +1,7 @@
 import Home from "../../pages/Home";
 import About from "../../pages/About";
 import NotFound from "../../pages/NotFound";
+import OrderPage from "../../pages/OrderPage";
 import { URL } from "../constants/URL";
 
 /**
@@ -37,6 +38,16 @@ export const routes = [
     meta: {
       title: "About",
       description: "About Page",
+    },
+  },
+  {
+    path: URL.ORDER,
+    component: OrderPage,
+    name: "Order",
+    exact: true,
+    meta: {
+      title: "Order",
+      description: "Order Page with Toss Payments",
     },
   },
 ];
