@@ -2,6 +2,8 @@ import Home from "../../pages/Home";
 import About from "../../pages/About";
 import NotFound from "../../pages/NotFound";
 import OrderPage from "../../pages/OrderPage";
+import OrderSuccessPage from "../../pages/OrderSuccessPage";
+import OrderFailPage from "../../pages/OrderFailPage";
 import { URL } from "../constants/URL";
 
 /**
@@ -48,6 +50,26 @@ export const routes = [
     meta: {
       title: "Order",
       description: "Order Page with Toss Payments",
+    },
+  },
+  {
+    path: URL.PAYMENT_SUCCESS,
+    component: OrderSuccessPage,
+    name: "PaymentSuccess",
+    exact: true,
+    meta: {
+      title: "Payment Success",
+      description: "Payment Success Page",
+    },
+  },
+  {
+    path: URL.FAIL,
+    component: OrderFailPage,
+    name: "OrderFail",
+    exact: true,
+    meta: {
+      title: "Payment Failed",
+      description: "Payment Failed Page",
     },
   },
 ];

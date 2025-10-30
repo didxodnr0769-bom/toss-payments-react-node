@@ -70,6 +70,7 @@ export default function OrderPage() {
             useAppCardOnly: false,
           },
         });
+        break;
       case "TRANSFER":
         await payment.requestPayment({
           method: "TRANSFER", // 계좌이체 결제
@@ -89,6 +90,7 @@ export default function OrderPage() {
             useEscrow: false,
           },
         });
+        break;
       case "VIRTUAL_ACCOUNT":
         await payment.requestPayment({
           method: "VIRTUAL_ACCOUNT", // 가상계좌 결제
@@ -109,6 +111,7 @@ export default function OrderPage() {
             validHours: 24,
           },
         });
+        break;
       case "MOBILE_PHONE":
         await payment.requestPayment({
           method: "MOBILE_PHONE", // 휴대폰 결제
@@ -122,6 +125,7 @@ export default function OrderPage() {
           // 가상계좌 안내, 퀵계좌이체 휴대폰 번호 자동 완성에 사용되는 값입니다. 필요하다면 주석을 해제해 주세요.
           // customerMobilePhone: "01012341234",
         });
+        break;
       case "CULTURE_GIFT_CERTIFICATE":
         await payment.requestPayment({
           method: "CULTURE_GIFT_CERTIFICATE", // 문화상품권 결제
@@ -135,6 +139,7 @@ export default function OrderPage() {
           // 가상계좌 안내, 퀵계좌이체 휴대폰 번호 자동 완성에 사용되는 값입니다. 필요하다면 주석을 해제해 주세요.
           // customerMobilePhone: "01012341234",
         });
+        break;
       case "FOREIGN_EASY_PAY":
         await payment.requestPayment({
           method: "FOREIGN_EASY_PAY", // 해외 간편결제
@@ -155,6 +160,7 @@ export default function OrderPage() {
             country: "KR",
           },
         });
+        break;
     }
   }
 

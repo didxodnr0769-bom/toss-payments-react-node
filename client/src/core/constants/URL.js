@@ -16,6 +16,12 @@ export const URL = {
   // Order page
   ORDER: "/order",
 
+  // Payment success page
+  PAYMENT_SUCCESS: "/payment/success",
+
+  // Order fail page
+  FAIL: "/fail",
+
   // 404 Not Found page (wildcard)
   NOT_FOUND: "*",
 };
