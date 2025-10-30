@@ -27,6 +27,10 @@ app.get("/api/health", (req, res) => {
   res.json({ status: "OK", timestamp: new Date().toISOString() });
 });
 
+// Payment 라우트
+const paymentRouter = require("./routes/payment");
+app.use("/api/payment", paymentRouter);
+
 // 404 핸들러
 app.use((req, res) => {
   res.status(404).json({ error: "Not Found" });
